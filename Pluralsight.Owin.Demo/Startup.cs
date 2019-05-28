@@ -35,7 +35,7 @@ namespace Pluralsight.Owin.Demo
             app.Use(async (ctx, next) =>
             {
 
-               await ctx.Response.WriteAsync("<html><head></head><body><b>Hello World</b></body></html>");
+               await ctx.Response.WriteAsync("<html><head></head><body><b>Hello World from Git</b></body></html>");
 
 
             });
