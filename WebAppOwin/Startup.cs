@@ -8,6 +8,7 @@ namespace WebAppOwin
     {
         public void Configuration(IAppBuilder app)
         {
+            SwaggerBootstrapper.Register(new System.Web.Http.HttpConfiguration());
             ConfigureAuth(app);
         }
     }
