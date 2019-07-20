@@ -17,8 +17,8 @@ namespace WebAppOwin.Controllers
         {
             ViewBag.Message = "Your application description page. ApplicationInsight";
 
-
-            System.Diagnostics.Trace.TraceInformation("Information > About");
+            var v = HttpRuntime.TargetFramework;
+            System.Diagnostics.Trace.TraceInformation("Information > Framework" + v.ToString());
             System.Diagnostics.Trace.TraceWarning("Warning > About");
             System.Diagnostics.Trace.TraceError("Error > About");
 
